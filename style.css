@@ -47,7 +47,6 @@
   background-color: #0e1c1d;
  }
 
-
  .Reset {
   background-color: brown;
   color: antiquewhite;
@@ -58,5 +57,31 @@
   background-color: rgb(54, 14, 14);
 }
 
+.auto {
+  display: flex;
+  gap: 10px;
+}
 
- 
+.auto button {
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 10px;
+  height: 35px;
+  width: 157px;
+
+  background-color: #642d01af;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: antiquewhite;
+
+  transition: 0.5s;
+}
+
+.auto button:hover {
+  background-color: #000000af;
+}
