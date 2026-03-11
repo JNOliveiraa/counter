@@ -37,24 +37,24 @@
   border: none;
  }
 
- .decrement, .increment {
+ .Decrement, .Increment {
   background-color: #2e5d5f;
   color: aliceblue;
   transition: 0.5s;
  }
 
- .decrement:hover, .increment:hover {
+ .Decrement:hover, .Increment:hover {
   background-color: #0e1c1d;
  }
 
 
- .reset {
+ .Reset {
   background-color: brown;
   color: antiquewhite;
   transition: 0.5s;
  }
 
-.reset:hover {
+.Reset:hover {
   background-color: rgb(54, 14, 14);
 }
 
