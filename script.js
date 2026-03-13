@@ -12,6 +12,14 @@ const btnAutodecrement = document.querySelector(".Autodecrement")
 
 const valorSalvo = localStorage.getItem("Contador")
 
+function verifiCor () {
+  if (Contador < 0) {
+    Numero.style.color = "red"
+  } else {
+    Numero.style.color = "black"
+  }
+}
+
 if (valorSalvo !== null) {
   Contador = Number(valorSalvo)
   Numero.textContent = Contador
@@ -22,6 +30,7 @@ btnIncrement.addEventListener("click", () => {
 
   Numero.textContent = Contador
   localStorage.setItem("Contador", Contador)
+  verifiCor()
 })
 
 btnDecrement.addEventListener("click", () => {
@@ -29,6 +38,7 @@ btnDecrement.addEventListener("click", () => {
 
   Numero.textContent = Contador
   localStorage.setItem("Contador", Contador)
+  verifiCor()
 })
 
 btnReset.addEventListener("click", () => {
@@ -46,6 +56,7 @@ btnAutoincrement.addEventListener("click", () => {
       Contador++
       Numero.textContent = Contador
       localStorage.setItem("Contador", Contador)
+      verifiCor()
     }, 500)
     rodando = true
 
@@ -65,6 +76,7 @@ btnAutodecrement.addEventListener("click", () => {
       Contador--
       Numero.textContent = Contador
       localStorage.setItem("Contador", Contador)
+      verifiCor()
     }, 500);
 
     rodando = true
